@@ -8,7 +8,7 @@
           to="/contacts"
           class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow block text-center mb-6"
         >Select contact</router-link>
-        <div v-else class="mb-4 text-m bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow block text-center">Contact: {{contact.lastName}} {{contact.firstName}}</div>
+        <div v-else class="mb-4 text-m bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow block text-center">Contact: {{contact.lastName}} {{contact.firstName}}</div>
         <button
           v-if="contact"
           @click="deletePaymentInfo('contact')"
@@ -33,11 +33,11 @@
       <Input
         v-if="paymentMethod && contact"
         :input="{type: 'text', label: 'Amount', id: 'amount', name: 'amount'}"
-        class="mb-10"
+        class="mb-6"
       />
       <button
         v-if="contact && paymentMethod && amount"
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full mb-4"
       >Pay</button>
     </form>
   </main>
