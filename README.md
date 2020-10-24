@@ -3,7 +3,6 @@
 ## App Overview
 This app lets you create contacts and payment methods saving everything in browser local storage.
 You may choose contact and payment method to transfer money.
-Currently  styles
 
 ## Patterns
 This app iplements different Vue, Vue 3 and Web patterns:
