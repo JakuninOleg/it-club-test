@@ -39,6 +39,6 @@ export const useStore = () => ({
     state.accounts.push({ id: id(), accountName, accountNumber, bsb, type})
   },
   addPayment: ({ contact, paymentMethod }) => {
-    state.accounts.push({ id: id(), contact, paymentMethod })
+    state.payments.push({ id: id(), contact, paymentMethod })
   }
 })

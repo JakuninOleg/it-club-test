@@ -19,6 +19,8 @@ const routes = [
 
 const router = createRouter({ history, routes });
 
+// Transition effects
+
 router.afterEach((to, from) => {
   if (to.path == '/' && from.path == '/success') {
     to.meta.transitionName = 'fade-slide-down'

@@ -24,7 +24,10 @@ export const usePaymentState = () => ({
   clearFormData: (formInputName) => {
     paymentState.formData[formInputName] = ""
   },
-  clearPaymentData: (paymentLabel) => {
+  clearPaymentLabel: (paymentLabel) => {
     paymentState.paymentData[paymentLabel] = ""
+  },
+  clearPaymentData: () => {
+    paymentState.paymentData = {}
   }
 })
