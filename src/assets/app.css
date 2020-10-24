@@ -1,0 +1,116 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.transition {
+  overflow: hidden;
+}
+
+.page {
+  min-height: 100vh;
+  background: white;
+}
+
+.main {
+  margin: 40px 20px 0;
+}
+
+/* Page transition animations */
+
+/* Common animation rules */
+
+.slide-left,
+.slide-right,
+.slide-left-leave-active,
+.slide-left-enter-active,
+.slide-right-leave-active,
+.slide-right-enter-active,
+.fade-slide-up,
+.fade-slide-down,
+.fade-slide-up-leave-active,
+.fade-slide-up-enter-active,
+.fade-slide-down-leave-active,
+.fade-slide-down-enter-active {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* Slide left and right */
+
+.slide-left-enter-active {
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+  transform: translateX(100%);
+}
+
+.slide-left-enter-to {
+  z-index: 2;
+  transform: translateX(0%);
+}
+
+.slide-left-leave-active {
+  z-index: -1;
+}
+
+.slide-left-leave-to {
+  z-index: -1;
+}
+
+.slide-right-leave-active {
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+  transform: translateX(0%);
+}
+
+.slide-right-leave-to {
+  z-index: 2;
+  transform: translateX(100%);
+}
+
+/*  Slide-fade up and down*/
+
+.fade-slide-up,
+.fade-slide-down,
+.fade-slide-up-leave-active,
+.fade-slide-up-enter-active,
+.fade-slide-down-leave-active,
+.fade-slide-down-enter-active {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.fade-slide-up-enter-active {
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.fade-slide-up-enter-to {
+  z-index: 2;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.fade-slide-up-leave-active {
+  z-index: -1;
+}
+
+.fade-slide-up-leave-to {
+  z-index: -1;
+}
+
+.fade-slide-down-leave-active {
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.fade-slide-down-leave-to {
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(100%);
+}
