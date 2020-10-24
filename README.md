@@ -2,7 +2,7 @@
 
 ## App Overview
 This app lets you create contacts and payment methods saving everything in browser local storage.
-You may choose contact and payment method to transfer money.
+You may choose contact and payment method to transfer money. Mobile-only styling.
 
 ## Patterns
 This app iplements different Vue, Vue 3 and Web patterns:
@@ -33,4 +33,5 @@ $ yarn dev
 
 ## App Preview
 You can check working app here. Powered by Netlify.
+
 [It Club Payment App](https://it-club-payment.netlify.app/)
